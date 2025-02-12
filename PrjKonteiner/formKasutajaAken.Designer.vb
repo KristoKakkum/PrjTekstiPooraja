@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class formKasutajaAken
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -98,7 +98,7 @@ Partial Class Form1
         Me.lblPooraProtseduuriga.TabIndex = 7
         Me.lblPooraProtseduuriga.Text = "Pööramine protseduuriga"
         '
-        'Form1
+        'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -111,7 +111,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtValjundTekst2)
         Me.Controls.Add(Me.txtValjundTekst1)
         Me.Controls.Add(Me.txtSisendTekst)
-        Me.Name = "Form1"
+        Me.Name = "formKasutajaAken"
         Me.Text = "Tekstitöötlus"
         Me.ResumeLayout(False)
         Me.PerformLayout()
