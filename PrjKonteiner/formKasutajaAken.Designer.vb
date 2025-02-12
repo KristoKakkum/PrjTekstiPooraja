@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formKasutajaAken
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class formKasutajaAken
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.txtSisendTekst = New System.Windows.Forms.TextBox()
         Me.txtValjundTekst1 = New System.Windows.Forms.TextBox()
         Me.txtValjundTekst2 = New System.Windows.Forms.TextBox()
@@ -30,6 +31,10 @@ Partial Class formKasutajaAken
         Me.LblSisendTekst = New System.Windows.Forms.Label()
         Me.lblPooraFunktsiooniga = New System.Windows.Forms.Label()
         Me.lblPooraProtseduuriga = New System.Windows.Forms.Label()
+        Me.btnStart = New System.Windows.Forms.Button()
+        Me.btnStopp = New System.Windows.Forms.Button()
+        Me.timerUuenda = New System.Windows.Forms.Timer(Me.components)
+        Me.lblTextInfo = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtSisendTekst
@@ -98,11 +103,45 @@ Partial Class formKasutajaAken
         Me.lblPooraProtseduuriga.TabIndex = 7
         Me.lblPooraProtseduuriga.Text = "Pööramine protseduuriga"
         '
+        'btnStart
+        '
+        Me.btnStart.Location = New System.Drawing.Point(76, 346)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(75, 41)
+        Me.btnStart.TabIndex = 8
+        Me.btnStart.Text = "Start"
+        Me.btnStart.UseVisualStyleBackColor = True
+        '
+        'btnStopp
+        '
+        Me.btnStopp.Location = New System.Drawing.Point(76, 424)
+        Me.btnStopp.Name = "btnStopp"
+        Me.btnStopp.Size = New System.Drawing.Size(75, 41)
+        Me.btnStopp.TabIndex = 9
+        Me.btnStopp.Text = "Stop"
+        Me.btnStopp.UseVisualStyleBackColor = True
+        '
+        'timerUuenda
+        '
+        Me.timerUuenda.Interval = 3000
+        '
+        'lblTextInfo
+        '
+        Me.lblTextInfo.AutoSize = True
+        Me.lblTextInfo.Location = New System.Drawing.Point(890, 73)
+        Me.lblTextInfo.Name = "lblTextInfo"
+        Me.lblTextInfo.Size = New System.Drawing.Size(42, 20)
+        Me.lblTextInfo.TabIndex = 10
+        Me.lblTextInfo.Text = "label"
+        '
         'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(867, 450)
+        Me.ClientSize = New System.Drawing.Size(1250, 618)
+        Me.Controls.Add(Me.lblTextInfo)
+        Me.Controls.Add(Me.btnStopp)
+        Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.lblPooraProtseduuriga)
         Me.Controls.Add(Me.lblPooraFunktsiooniga)
         Me.Controls.Add(Me.LblSisendTekst)
@@ -126,4 +165,8 @@ Partial Class formKasutajaAken
     Friend WithEvents LblSisendTekst As Label
     Friend WithEvents lblPooraFunktsiooniga As Label
     Friend WithEvents lblPooraProtseduuriga As Label
+    Friend WithEvents btnStart As Button
+    Friend WithEvents btnStopp As Button
+    Friend WithEvents timerUuenda As Timer
+    Friend WithEvents lblTextInfo As Label
 End Class
