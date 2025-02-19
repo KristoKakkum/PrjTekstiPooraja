@@ -45,4 +45,18 @@
     Private Function PooraTekst() As String Implements ITeisendaja.PooraTekst
         Return StrReverse(PooratavTekst)
     End Function
+
+    Private Function ITeisendaja_TaisHaalikuteArv() As Integer _
+        Implements ITeisendaja.TaisHaalikuteArv
+
+        Dim taishaaled As String = "aeiouõäöüAEIOUÕÄÖÜ"
+        Dim loendur As Integer = 0
+
+        For Each ch As Char In PooratavTekst
+            If taishaaled.Contains(ch) Then
+                loendur += 1
+            End If
+        Next
+        Return loendur
+    End Function
 End Class

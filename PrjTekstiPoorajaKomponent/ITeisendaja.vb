@@ -6,4 +6,5 @@
 
 	Function PooraTekst() As String          ' Liidese meetodid koodi ei saa
 	Sub TeisendaTekst(ByRef sisendtekst As String)
+	Function TaisHaalikuteArv() As Integer
 End Interface
